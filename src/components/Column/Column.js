@@ -17,10 +17,10 @@ class Column extends React.Component {
     cards: PropTypes.array,
   }
 
-  addCart(title) {
+  addCard(title) {
     this.setState(state => (
       {
-        card: [
+        cards: [
           ...state.cards,
           {
             key: state.cards.lenght ? state.cards[state.cards-1].key+1 : 0,
@@ -35,7 +35,7 @@ class Column extends React.Component {
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
-          <span className={styles.icom}>
+          <span className={styles.icon}>
             <Icon name={this.props.icon} />
           </span>
           {ReactHtmlParser(this.props.title)}
