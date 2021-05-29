@@ -11,6 +11,10 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  searchResults: {
+    icon: 'search',
+    title: 'Search Results',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -94,6 +98,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to learn!',
+    description: 'Interesting things I want to get to know!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to read.',
+    description: 'Interesting things I want to find out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
@@ -120,6 +136,24 @@ const columns = [
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Test',
+    icon: 'crown',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-3',
+    title: 'Test II',
+    icon: 'heart',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-3',
+    title: 'Test II',
+    icon: 'star',
   },
 ];
 
@@ -153,6 +187,16 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-1',
+    columnId: 'column-5',
+    title: 'Test',
+  },
+  {
+    id: 'card-1',
+    columnId: 'column-6',
+    title: 'Test II',
   },
 ];
 
